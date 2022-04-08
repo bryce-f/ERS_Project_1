@@ -1,0 +1,194 @@
+#login {
+    text-align: center;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: table;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+.form-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#reimbursements-tbl {
+    position: relative;
+    justify-content: center;
+
+}
+#reimbursements-tbl_wrapper {
+    transition: margin-left .5s;
+}
+
+
+#reimbursements-tbl_length {
+    margin-left: 20px;
+    padding-top: 30px;
+}
+#reimbursements-tbl_length select {
+    background-color: white;
+    border-style: inset;
+}
+
+#reimbursements-tbl_filter {
+    margin-right: 20px;
+    padding-top: 30px;
+}
+#reimbursements-tbl_filter input{
+    background-color: white;
+    border-style: inset;
+}
+
+
+h1 {
+    font-size: 200%;
+    font-weight: 500;
+    text-align: center;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: 500;
+    padding: 0px;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#submit-new-btn {
+   margin: 0 auto;
+}
+
+#cancel-btn {
+    margin-top: 25px;
+}
+
+
+
+td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal; 
+    font-size: 16px;
+}
+
+#logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#clear-sort {
+    font-weight: bold;
+}
+
+#webpage-title {
+    display: inline;
+    margin: 20%;
+}
+
+#head-pad {
+    padding-top: 20px;
+}
+
+#new-btn {
+    margin-left: 20px;
+}
+
+.filter {
+    width: 103px;
+}
+
+#deny-button {
+    width: 70px;
+}
+#approve-button {
+    width: 70px;
+}
+/* .edit {
+    width: 70px;
+    height: 20px;
+} */
+#submit-new-btn {
+    margin-top: 20px;
+}
+
+
+/* SIDEBAR */
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar div {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar div:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: red;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  display: inline;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

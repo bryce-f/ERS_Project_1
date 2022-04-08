@@ -1,0 +1,7 @@
+{
+  "private_key_id": "myPrivateKey",
+  "private_key": "-----BEGIN PRIVATE KEY-----myPrivateKeyString\n-----END PRIVATE KEY-----\n",
+  "client_email": "fransenbryce@gmail.com",
+  "client_id": "fransenbryce",
+  "type": "service_account"
+}

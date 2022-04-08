@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <form name="form" id="reimbForm" method="post" enctype="multipart/form-data">
+        <div class="field">
+            <label class="label">Reimbursement Amount</label>
+            <div class="control">
+                <input id='amount' class="input" type="text" placeholder="Enter $ amount here...">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Reimbursement Type</label>
+            <div class="control">
+                <div class="select" >
+                    <select id="selection">
+                        <option>lodging</option>
+                        <option>travel</option>
+                        <option>food</option>
+                        <option>other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Description</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Enter a description here..." id="desc"></textarea>
+            </div>
+        </div>
+
+        <div class="file">
+            <label class="file-label">
+                <input class="file-input" type="file" name="receipt" id="input-image">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Upload Image of Receipt…</span>
+                </span>
+            </label>
+        </div>
+
+        <div class="space">
+            
+            <input type="button" class="button is-dark" value="Submit form" id="submit-new-btn">
+        </div>
+        <div>
+            <input type="button" class="button is-danger is-light btm" id="cancel-btn" value="Cancel">
+            
+        </div>
+
+    </form>
+<script src="newReimbursement.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bulma.min.js"></script> -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <button id="logout-btn" class="button is-dark">Logout</button>
+    
+    <div id="mySidebar" class="sidebar">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        <div><button id="sort-pending" class="button filter is-info ">Pending</button></div>
+    
+        <div><button id="sort-denied" class="button filter is-danger">Denied</button></div>
+    
+        <div><button id="sort-approved" class="button filter is-success">Approved</button></div>
+    
+        <div><button id="clear-sort" class="button filter is-warning">Clear</button></div>
+    
+    </div>
+    
+    
+    <div id="head-pad">
+        <div id="main">
+            <button class="button is-dark" onclick="openNav()">&#9776; Filter</button>
+            <button id="new-btn" class="button is-success">Add New Reimbursement</button>
+        </div>
+        <h1 id="webpage-title">Welcome to the Employee Page</h1>
+    </div>
+
+    <table id="reimbursements-tbl" class="display" style="width:99%">
+        <thead>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Submitted</th>
+            <th>Resolved</th>
+            <th>Resolver</th>
+            <th>Receipt</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+    
+        </tbody>
+    </table>
+    <!-- modal -->
+    <div id='pic-modal' class="modal">
+        <div id="pmb" class="modal-background"></div>
+        <div id="pmc" class="modal-content">
+            <div id="img-container" class="image is-large">
+                <img src="#" id="img-placement" />
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="employee.js"></script>
+</body>
+
+</html>
