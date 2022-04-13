@@ -34,7 +34,7 @@ This is an example website of an employee reimbursement system, that demonstrate
 
 To-do list:
 * Create an option for admins to add new users to the system
-* 
+* Fix overall styling 
 
 ****
 ## Getting Started
