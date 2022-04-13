@@ -46,6 +46,8 @@ Prerequisites:
 - live-server (`npm install live-server`)
 - Java IDE (IntelliJ is recommended)
 
+### Steps:
+
 1. Clone repository
 
 ```
